@@ -1,0 +1,14 @@
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\ApplicationIcon.png
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Background.png
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo Timer.dll
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo Timer.pdb
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\AppManifest.xaml
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo_Timer.xap
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\ResolveAssemblyReference.cache
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\App.g.i.cs
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\MainPage.g.i.cs
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\NormalHalo.g.i.cs
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.g.resources
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.pdb
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\XapCacheFile.xml

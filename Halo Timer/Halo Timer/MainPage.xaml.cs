@@ -20,5 +20,10 @@ namespace Halo_Timer
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/NormalHalo.xaml", UriKind.Relative));
+        }
     }
 }

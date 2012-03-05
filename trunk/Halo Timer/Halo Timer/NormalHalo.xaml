@@ -11,7 +11,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -22,10 +22,20 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <!--ContentPanel - place additional content here-->
-        <TextBox Grid.Row="1" Height="72"  HorizontalAlignment="Left" Margin="23,12,0,0" Name="textBox1" Text="Rockets" VerticalAlignment="Top" Width="156" IsEnabled="False" />
-        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="23,0,0,606" Name="rocketTime" Text="" VerticalAlignment="Bottom" Width="156" IsEnabled="False" />
-        <Button Content="Reset" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="23,168,0,0" Name="rocketReset" VerticalAlignment="Top" Width="156" Click="rocketReset_Click" />
-    </Grid>
+        <TextBox Grid.Row="1" Height="72"  HorizontalAlignment="Left" Margin="25,149,0,0" Name="rocketName" Text="Rockets" VerticalAlignment="Top" Width="156" IsEnabled="False" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,0,0,469" Name="rocketTime" Text="" VerticalAlignment="Bottom" Width="156" IsEnabled="False" />
+        <Button Content="Reset" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,305,0,0" Name="rocketReset" VerticalAlignment="Top" Width="156" Click="rocketReset_Click" />
+        <Button Content="Reset" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="273,305,0,0" Name="sniperReset" VerticalAlignment="Top" Width="160" Click="sniperReset_Click" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="273,227,0,0" Name="sniperTime" Text="" VerticalAlignment="Top" Width="160" IsEnabled="False"/>
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="273,149,0,0" Name="sniperName" Text="Sniper" VerticalAlignment="Top" Width="160" IsEnabled="False"/>
+        <toolkit:ListPicker Grid.Row="1" Height="726" HorizontalAlignment="Left" Margin="273,30,0,0" Name="listPicker" VerticalAlignment="Top" Width="160" >
+            <toolkit:ListPickerItem Content="Asylum" Name="Asylum"/>
+            <toolkit:ListPickerItem Content="Boardwalk" Name="Boardwalk"/>
+            <toolkit:ListPickerItem Content="The Cage" Name="TheCage"/>
+            <toolkit:ListPickerItem Content="Spire" Name="Spire"/>
+        </toolkit:ListPicker>
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,448,0,0" Name="test" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False"/>
+        </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
     <!--<phone:PhoneApplicationPage.ApplicationBar>

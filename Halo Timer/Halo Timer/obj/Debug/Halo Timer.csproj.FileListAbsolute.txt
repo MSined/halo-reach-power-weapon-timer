@@ -12,3 +12,6 @@ F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo T
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.pdb
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\XapCacheFile.xml
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml

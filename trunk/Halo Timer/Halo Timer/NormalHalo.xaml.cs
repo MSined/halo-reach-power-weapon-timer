@@ -24,6 +24,9 @@ namespace Halo_Timer
     
     public partial class NormalHalo : PhoneApplicationPage
     {
+        // Listpicker array for map names
+        String[] mapNames = { "Asylum", "Boardwalk", "Countdown" };
+
         // Time Objects
         private DispatcherTimer rockets = new DispatcherTimer();
         private DispatcherTimer sniper = new DispatcherTimer();
@@ -45,6 +48,30 @@ namespace Halo_Timer
         public NormalHalo()
         {
             InitializeComponent();
+            this.listPicker.ItemsSource = mapNames;
+        }
+
+        private void setMap()
+        {
+            map = listPicker.SelectedIndex;
+        }
+
+        // Sets the Rocker Launcher timer based on the map selection
+        private void setRocketTimer()
+        {
+            setMap();
+            switch (map)
+            {
+                case 0:
+                    rocketDuration = 180;
+                    break;
+                case 1:
+                    rocketDuration = 120;
+                    break;
+                default:
+                    rocketDuration = 180;
+                    break;
+            }
         }
 
         private void sniperReset_Click(object sender, RoutedEventArgs e)
@@ -73,7 +100,8 @@ namespace Halo_Timer
         // Resets the timer to three minutes when button is clicked.
         private void rocketReset_Click(object sender, RoutedEventArgs e)
         {
-            
+            setRocketTimer();
+
             // If statement is to prevent the tick time from increase on each reset.
             if (!rocketEnabled)
             {
@@ -82,12 +110,6 @@ namespace Halo_Timer
                 rocketEnabled = true;
             }
             // Reset the Duration and start the timer
-            if (map == 0)
-            {
-                rocketDuration = 180;
-            }
-            else
-                rocketDuration = 120;
             rockets.Start();
         }
 
@@ -119,14 +141,5 @@ namespace Halo_Timer
             return newTime;
         }
 
-
-        private void listPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //Get the data object that represents the current selected item
-            //SampleData data = (sender as ListPicker).SelectedItem as SampleData;
-            map = this.listPicker.SelectedIndex;
-            //Get the selected ListPickerItem container instance    
-            //ListPickerItem selectedItem = this.listPicker.ItemContainerGenerator.ContainerFromItem(data) as ListPickerItem;
-        }
     }
 }

@@ -57,25 +57,30 @@ namespace Halo_Timer
         }
 
         // Sets the Rocker Launcher timer based on the map selection
-        private void setRocketTimer()
+        private void setTimer()
         {
             setMap();
             switch (map)
             {
                 case 0:
                     rocketDuration = 180;
+                    sniperDuration = 120;
                     break;
                 case 1:
                     rocketDuration = 120;
+                    sniperDuration = 90;
                     break;
                 default:
-                    rocketDuration = 180;
+                    rocketDuration = 0;
+                    sniperDuration = 0;
                     break;
             }
         }
 
         private void sniperReset_Click(object sender, RoutedEventArgs e)
         {
+            setTimer();
+
             // If statement is to prevent the tick time from increase on each reset.
             if (!sniperEnabled)
             {
@@ -84,7 +89,6 @@ namespace Halo_Timer
                 sniperEnabled = true;
             }
             // Reset the Duration and start the timer
-            sniperDuration = 180;
             sniper.Start();
         }
 
@@ -100,7 +104,7 @@ namespace Halo_Timer
         // Resets the timer to three minutes when button is clicked.
         private void rocketReset_Click(object sender, RoutedEventArgs e)
         {
-            setRocketTimer();
+            setTimer();
 
             // If statement is to prevent the tick time from increase on each reset.
             if (!rocketEnabled)
@@ -128,6 +132,7 @@ namespace Halo_Timer
             box.Text = convertTime(time);
         }
 
+        // Converts
         string convertTime(int duration)
         {
             int minutes = duration / 60;
@@ -140,6 +145,5 @@ namespace Halo_Timer
                 newTime = newTime + seconds.ToString();
             return newTime;
         }
-
     }
 }

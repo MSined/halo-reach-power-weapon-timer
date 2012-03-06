@@ -15,3 +15,19 @@ F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo T
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\ApplicationIcon.png
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Background.png
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo Timer.dll
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo Timer.pdb
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\AppManifest.xaml
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo_Timer.xap
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\App.g.i.cs
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\MainPage.g.i.cs
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\NormalHalo.g.i.cs
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.g.resources
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.pdb
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\XapCacheFile.xml

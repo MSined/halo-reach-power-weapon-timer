@@ -37,7 +37,7 @@
         <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,467,0,0" Name="swordTimer" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
         <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,569,0,0" Name="shotgunTimer" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
         <Button Content="Sword" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,467,0,0" Name="swordReset" VerticalAlignment="Top" Width="201" />
-        <Button Content="Shotgun" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,569,0,0" Name="shotgunReset" VerticalAlignment="Top" Width="201" />
+        <Button Content="Shotgun" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,569,0,0" Name="shotgunReset" VerticalAlignment="Top" Width="201" Click="shotgunReset_Click" />
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

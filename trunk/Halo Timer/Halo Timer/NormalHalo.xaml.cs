@@ -25,20 +25,31 @@ namespace Halo_Timer
     public partial class NormalHalo : PhoneApplicationPage
     {
         // Listpicker array for map names
-        String[] mapNames = { "Asylum", "Boardwalk", "Countdown" };
+        String[] mapNames = { "Affinity", "Arena Zealot", "Asylum", "Boardwalk", "Countdown", "Eden Minor", "Kingdom", 
+                              "Pinnacle", "Powerhouse", "Precipice", "Reflection", "Select", "Sword Base", "Uncaged" };
 
         // Time Objects
-        private DispatcherTimer rockets = new DispatcherTimer();
-        private DispatcherTimer sniper = new DispatcherTimer();
-        
+        private DispatcherTimer rockets     = new DispatcherTimer();
+        private DispatcherTimer sniper      = new DispatcherTimer();
+        private DispatcherTimer gLauncher   = new DispatcherTimer();
+        private DispatcherTimer sword       = new DispatcherTimer();
+
+        int[] rocketTimes = { 150, 0, 0, 180, 0, 0, 180, 180, 180, 0, 180, 180, 0, 180 };
+        int[] sniperTimes = { 120, 0, 90, 120, 0, 0, 0, 180, 0, 180, 180, 180, 180, 120 };
+        int[] gLauncherTimes = { 0, 0, 0, 0, 0, 0, 0, 0, 90, 120, 0, 0, 0, 120 };
+        int[] swordTimes = { 60, 0, 90, 0, 180, 0, 180, 0, 0, 0, 180, 0, 120, 0 };
         
         // Integer time variables
         int rocketDuration;
         int sniperDuration;
+        int gLauncherDuration;
+        int swordDuration;
 
         // Boolean Variables
-        bool rocketEnabled = false;
-        bool sniperEnabled = false;
+        bool rocketEnabled      = false;
+        bool sniperEnabled      = false;
+        bool gLauncherEnabled   = false;
+        bool swordEnabled       = false;
 
         string newTime;
         
@@ -57,39 +68,49 @@ namespace Halo_Timer
         }
 
         // Sets the Rocker Launcher timer based on the map selection
-        private void setTimer()
+        private void setRocketTimer()
         {
             setMap();
-            switch (map)
-            {
-                case 0:
-                    rocketDuration = 180;
-                    sniperDuration = 120;
-                    break;
-                case 1:
-                    rocketDuration = 120;
-                    sniperDuration = 90;
-                    break;
-                default:
-                    rocketDuration = 0;
-                    sniperDuration = 0;
-                    break;
-            }
+            rocketDuration = rocketTimes[map];
         }
 
+        // Sets sniper rifle time based on map selection
+        private void setSniperTimer()
+        {
+            setMap();
+            sniperDuration = sniperTimes[map];
+        }
+
+        // Sets the Grenade Launcher timer based on the map selection
+        private void setgLauncherTimer()
+        {
+            setMap();
+            gLauncherDuration = gLauncherTimes[map];
+        }
+
+        // Sets the Sword timer based on the map selection
+        private void setSwordTimer()
+        {
+            setMap();
+            swordDuration = swordTimes[map];
+        }
+
+        // Resets the sniper timer
         private void sniperReset_Click(object sender, RoutedEventArgs e)
         {
-            setTimer();
-
-            // If statement is to prevent the tick time from increase on each reset.
-            if (!sniperEnabled)
+            setSniperTimer();
+            if (sniperDuration != 0)
             {
-                sniper.Interval = new TimeSpan(0, 0, 1);
-                sniper.Tick += new EventHandler(sniper_Tick);
-                sniperEnabled = true;
+                // If statement is to prevent the tick time from increase on each reset.
+                if (!sniperEnabled)
+                {
+                    sniper.Interval = new TimeSpan(0, 0, 1);
+                    sniper.Tick += new EventHandler(sniper_Tick);
+                    sniperEnabled = true;
+                }
+                // Reset the Duration and start the timer
+                sniper.Start();
             }
-            // Reset the Duration and start the timer
-            sniper.Start();
         }
 
         // Handles appropriate actions on each tick: Lowers seconds, updates the field and stops timer when 0 is reached.
@@ -101,20 +122,23 @@ namespace Halo_Timer
                 sniper.Stop();
         }
 
-        // Resets the timer to three minutes when button is clicked.
+        // Resets the rocket timer
         private void rocketReset_Click(object sender, RoutedEventArgs e)
         {
-            setTimer();
+            setRocketTimer();
 
-            // If statement is to prevent the tick time from increase on each reset.
-            if (!rocketEnabled)
+            if (rocketDuration != 0)
             {
-                rockets.Interval = new TimeSpan(0, 0, 1);
-                rockets.Tick += new EventHandler(rockets_Tick);
-                rocketEnabled = true;
+                // If statement is to prevent the tick time from increase on each reset.
+                if (!rocketEnabled)
+                {
+                    rockets.Interval = new TimeSpan(0, 0, 1);
+                    rockets.Tick += new EventHandler(rockets_Tick);
+                    rocketEnabled = true;
+                }
+                // Reset the Duration and start the timer
+                rockets.Start();
             }
-            // Reset the Duration and start the timer
-            rockets.Start();
         }
 
         // Handles appropriate actions on each tick: Lowers seconds, updates the field and stops timer when 0 is reached.
@@ -125,6 +149,72 @@ namespace Halo_Timer
             if (rocketDuration <= 0)
                 rockets.Stop();
         }
+
+        // Resets grenade launcher timer
+        private void grenadeGunReset_Click(object sender, RoutedEventArgs e)
+        {
+            setgLauncherTimer();
+
+            if (gLauncherDuration != 0)
+            {
+                // If statement is to prevent the tick time from increase on each reset.
+                if (!gLauncherEnabled)
+                {
+                    gLauncher.Interval = new TimeSpan(0, 0, 1);
+                    gLauncher.Tick += new EventHandler(gLauncher_Tick);
+                    gLauncherEnabled = true;
+                }
+                // Reset the Duration and start the timer
+                gLauncher.Start();
+            }
+        }
+
+        // Handles appropriate actions on each tick: Lowers seconds, updates the field and stops timer when 0 is reached.
+        void gLauncher_Tick(object sender, EventArgs e)
+        {
+            gLauncherDuration--;
+            updateField(grenadeGunTimer, gLauncherDuration);
+            if (gLauncherDuration <= 0)
+                gLauncher.Stop();
+        }
+
+        // Resets sword timer
+        private void swordReset_Click(object sender, RoutedEventArgs e)
+        {
+            setSwordTimer();
+
+            if (swordDuration != 0)
+            {
+                swordTimer.Background = new SolidColorBrush(Colors.White);
+                // If statement is to prevent the tick time from increase on each reset.
+                if (!swordEnabled)
+                {
+                    sword.Interval = new TimeSpan(0, 0, 1);
+                    sword.Tick += new EventHandler(sword_Tick);
+                    swordEnabled = true;
+                }
+                // Reset the Duration and start the timer
+                sword.Start();
+            }
+        }
+
+        // Handles appropriate actions on each tick: Lowers seconds, updates the field and stops timer when 0 is reached.
+        void sword_Tick(object sender, EventArgs e)
+        {
+            swordDuration--;
+            if (swordDuration <= 46 && swordDuration >= 44)
+            {
+                swordTimer.Background = new SolidColorBrush(Colors.Yellow);
+            }
+            if (swordDuration == 20)
+            {
+                swordTimer.Background = new SolidColorBrush(Colors.Red);
+            }
+            updateField(swordTimer, swordDuration);
+            if (swordDuration <= 0)
+                sword.Stop();
+        }
+
 
         // Method to update the field to display the timer
         void updateField(TextBox box, int time)
@@ -145,5 +235,11 @@ namespace Halo_Timer
                 newTime = newTime + seconds.ToString();
             return newTime;
         }
+
+        
+
+       
+        
+        
     }
 }

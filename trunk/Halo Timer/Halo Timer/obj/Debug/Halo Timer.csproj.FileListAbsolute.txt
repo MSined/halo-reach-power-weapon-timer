@@ -31,3 +31,4 @@ C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\
 C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll
 C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.pdb
 C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\XapCacheFile.xml
+C:\Users\da_gau\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\MLGHalo.g.i.cs

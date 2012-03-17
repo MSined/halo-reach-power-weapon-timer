@@ -29,8 +29,8 @@
         <toolkit:ListPicker Grid.Row="1" Height="726" HorizontalAlignment="Left" Margin="273,30,0,0" Name="listPicker" VerticalAlignment="Top" Width="160" />
         <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,365,0,0" Name="grenadeGunTimer" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
         <Button Content="Grenade Gun" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,366,0,0" Name="grenadeGunReset" VerticalAlignment="Top" Width="201" Click="grenadeGunReset_Click" />
-        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,467,0,0" Name="swordTimer" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
-        <Button Content="Sword" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,467,0,0" Name="swordReset" VerticalAlignment="Top" Width="201" Click="swordReset_Click" />
+        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,573,0,0" Name="swordTimer" Text="" VerticalAlignment="Top" Width="112" IsEnabled="False" />
+        <Button Content="Sword" Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="143,573,0,0" Name="swordReset" VerticalAlignment="Top" Width="309" />
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

@@ -25,8 +25,8 @@ namespace Halo_Timer
     public partial class NormalHalo : PhoneApplicationPage
     {
         // Listpicker array for map names
-        String[] mapNames = { "Affinity", "Arena Zealot", "Asylum", "Boardwalk", "Countdown", "Eden Minor", "Kingdom", 
-                              "Pinnacle", "Powerhouse", "Precipice", "Reflection", "Select", "Sword Base", "Uncaged" };
+        String[] mapNames = { "Asylum", "Boardwalk", "Countdown", "Pinnacle", 
+                              "Powerhouse", "Reflection", "Sword Base", "Uncaged" };
 
         // Time Objects
         private DispatcherTimer rockets     = new DispatcherTimer();
@@ -34,10 +34,10 @@ namespace Halo_Timer
         private DispatcherTimer gLauncher   = new DispatcherTimer();
         private DispatcherTimer sword       = new DispatcherTimer();
 
-        int[] rocketTimes = { 150, 0, 0, 180, 0, 0, 180, 180, 180, 0, 180, 180, 0, 180 };
-        int[] sniperTimes = { 120, 0, 90, 120, 0, 0, 0, 180, 0, 180, 180, 180, 180, 120 };
-        int[] gLauncherTimes = { 0, 0, 0, 0, 0, 0, 0, 0, 90, 120, 0, 0, 0, 120 };
-        int[] swordTimes = { 60, 0, 90, 0, 180, 0, 180, 0, 0, 0, 180, 0, 120, 0 };
+        int[] rocketTimes       = { 0,  180, 0,     180, 180,   180, 0,     180 };
+        int[] sniperTimes       = { 90, 120, 0,     180, 0,     180, 180,   120 };
+        int[] gLauncherTimes    = { 0,  0,   0,     0,   90,    0,   0,     120 };
+        int[] swordTimes        = { 90, 0,   180,   0,   0,     180, 120,   0   };
         
         // Integer time variables
         int rocketDuration;

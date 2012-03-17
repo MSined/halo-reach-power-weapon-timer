@@ -22,15 +22,15 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <!--ContentPanel - place additional content here-->
-        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,160,0,0" Name="rocketTime" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
-        <Button Content="Rockets" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,161,0,0" Name="rocketReset" VerticalAlignment="Top" Width="201" Click="rocketReset_Click" />
-        <Button Content="Sniper" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,263,0,0" Name="sniperReset" VerticalAlignment="Top" Width="201" Click="sniperReset_Click" />
-        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,262,0,0" Name="sniperTime" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False"/>
-        <toolkit:ListPicker Grid.Row="1" Height="726" HorizontalAlignment="Left" Margin="273,30,0,0" Name="listPicker" VerticalAlignment="Top" Width="160" />
-        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="25,365,0,0" Name="grenadeGunTimer" Text="" VerticalAlignment="Top" Width="156" IsEnabled="False" />
-        <Button Content="Grenade Gun" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="251,366,0,0" Name="grenadeGunReset" VerticalAlignment="Top" Width="201" Click="grenadeGunReset_Click" />
-        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,573,0,0" Name="swordTimer" Text="" VerticalAlignment="Top" Width="112" IsEnabled="False" />
-        <Button Content="Sword" Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="143,573,0,0" Name="swordReset" VerticalAlignment="Top" Width="309" />
+        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,160,0,0" Name="rocketTime" Text="" VerticalAlignment="Top" Width="164" IsEnabled="False" />
+        <Button Content="Rockets" Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="195,160,0,0" Name="rocketReset" VerticalAlignment="Top" Width="257" Click="rocketReset_Click" />
+        <Button Content="Sniper" Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="195,294,0,0" Name="sniperReset" VerticalAlignment="Top" Width="257" Click="sniperReset_Click" />
+        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,294,0,0" Name="sniperTime" Text="" VerticalAlignment="Top" Width="164" IsEnabled="False"/>
+        <toolkit:ListPicker Grid.Row="1" Height="673" HorizontalAlignment="Left" Margin="273,30,0,0" Name="listPicker" VerticalAlignment="Top" Width="160" />
+        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,434,0,0" Name="grenadeGunTimer" Text="" VerticalAlignment="Top" Width="164" IsEnabled="False" />
+        <Button Content="Grenade Gun" Grid.Row="1" Height="101" HorizontalAlignment="Right" Margin="0,434,28,0" Name="grenadeGunReset" VerticalAlignment="Top" Width="257" Click="grenadeGunReset_Click" />
+        <TextBox Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="25,573,0,0" Name="swordTimer" Text="" VerticalAlignment="Top" Width="164" IsEnabled="False" />
+        <Button Content="Sword" Grid.Row="1" Height="101" HorizontalAlignment="Left" Margin="195,573,0,0" Name="swordReset" VerticalAlignment="Top" Width="257" />
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

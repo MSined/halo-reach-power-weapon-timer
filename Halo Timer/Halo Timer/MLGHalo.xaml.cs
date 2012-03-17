@@ -23,16 +23,13 @@ namespace Halo_Timer
         private DispatcherTimer mlgRockets = new DispatcherTimer();
         private DispatcherTimer mlgSniper = new DispatcherTimer();
         private DispatcherTimer mlgLauncher = new DispatcherTimer();
+        private DispatcherTimer customPowerup = new DispatcherTimer();
 
         // Declare time variables for each weapon
         int mlgRocketTimer;
         int mlgSniperTimer;
         int mlgLauncherTimer;
-
-        // Boolean values for tick timer
-        bool rocketEnabled = false;
-        bool sniperEnabled = false;
-        bool gLauncherEnabled = false;
+        int customPowerupTimer;
 
         string newTime;
         
@@ -48,6 +45,9 @@ namespace Halo_Timer
 
             mlgLauncher.Interval = new TimeSpan(0, 0, 1);
             mlgLauncher.Tick += new EventHandler(mlgLauncher_Tick);
+
+            customPowerup.Interval = new TimeSpan(0, 0, 1);
+            customPowerup.Tick += new EventHandler(customPowerup_Tick);
         }
 
         // Button that will start all the weapon timers.
@@ -102,6 +102,15 @@ namespace Halo_Timer
                 mlgLauncherTimer = 120;
         }
 
+        // Actions to perform on each grenade launcher tick
+        void customPowerup_Tick(object sender, EventArgs e)
+        {
+            customPowerupTimer--;
+            updateField(CustomTimer, customPowerupTimer);
+            if (customPowerupTimer <= 0)
+                customPowerup.Stop();
+        }
+
         // Method to update the field to display the timer
         void updateField(TextBox box, int time)
         {
@@ -120,6 +129,13 @@ namespace Halo_Timer
             else
                 newTime = newTime + seconds.ToString();
             return newTime;
+        }
+
+        // Reset the custom powerup timer
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            customPowerupTimer = 120;
+            customPowerup.Start();
         }
     }
 

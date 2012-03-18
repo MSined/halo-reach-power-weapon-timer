@@ -24,6 +24,7 @@ namespace Halo_Timer
         private DispatcherTimer mlgSniper = new DispatcherTimer();
         private DispatcherTimer mlgLauncher = new DispatcherTimer();
         private DispatcherTimer customPowerup = new DispatcherTimer();
+        private DispatcherTimer generalTimer = new DispatcherTimer();
 
         // Declare time variables for each weapon
         int mlgRocketTimer;
@@ -31,11 +32,17 @@ namespace Halo_Timer
         int mlgLauncherTimer;
         int customPowerupTimer;
 
+        // Sound Object
+        PlaySoundFiles soundPlayer = new PlaySoundFiles();
+
         string newTime;
         
         public MLGHalo()
         {
             InitializeComponent();
+
+            generalTimer.Interval = new TimeSpan(0, 0, 1);
+            generalTimer.Tick += new EventHandler(generalTimer_Tick);
 
             mlgSniper.Interval = new TimeSpan(0, 0, 1);
             mlgSniper.Tick += new EventHandler(mlgSniper_Tick);
@@ -63,6 +70,7 @@ namespace Halo_Timer
                 mlgRockets.Start();
                 mlgSniper.Start();
                 mlgLauncher.Start();
+                generalTimer.Start();
                 start = false;
             }
             else
@@ -71,8 +79,43 @@ namespace Halo_Timer
                 mlgRockets.Stop();
                 mlgSniper.Stop();
                 mlgLauncher.Stop();
+                generalTimer.Stop();
                 start = true;
             }
+        }
+
+        // Actions performed on every tick
+        void generalTimer_Tick(object sender, EventArgs e)
+        {
+            #region warnings
+            if (mlgRocketTimer == 20 && mlgSniperTimer == 20 && mlgLauncherTimer == 20)
+            {
+                soundPlayer.playAllWarning();
+            }
+            else if (mlgSniperTimer == 20 && mlgLauncherTimer == 20)
+            {
+                soundPlayer.playSniperGrenadeWarning();
+            }
+            else if (mlgRocketTimer == 20)
+            {
+                soundPlayer.playRocketWarning();
+            }
+            #endregion
+
+            #region spawns
+            if (mlgRocketTimer <= 1 && mlgSniperTimer <= 1 && mlgLauncherTimer <= 1)
+            {
+                soundPlayer.playAllSpawn();
+            }
+            else if (mlgSniperTimer <= 1 && mlgLauncherTimer <= 1)
+            {
+                soundPlayer.playSniperGrenadeSpawn();
+            }
+            else if (mlgRocketTimer <= 1)
+            {
+                soundPlayer.playRocketSpawn();
+            }
+            #endregion
         }
 
         // Actions to perform on each sniper tick

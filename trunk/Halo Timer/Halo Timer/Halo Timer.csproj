@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.Phone" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604" />
     <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
@@ -70,6 +71,7 @@
     <Compile Include="NormalHalo.xaml.cs">
       <DependentUpon>NormalHalo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PlaySoundFiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -101,8 +103,23 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sounds\01All-Warning.wav" />
+    <Content Include="Sounds\01Sniper-Grenade-Spawn.wav" />
+    <Content Include="Sounds\02All-Spawn.wav" />
+    <Content Include="Sounds\02Rocket-Spawn.wav" />
+    <Content Include="Sounds\03Custom-Powerup-Warning.wav" />
+    <Content Include="Sounds\03Sniper-Grenade-Warning.wav" />
+    <Content Include="Sounds\04Custom-Powerup-Spawn.wav" />
+    <Content Include="Sounds\04Rocket-Warning.wav" />
+    <Content Include="Sounds\05Sword-Warning.wav" />
+    <Content Include="Sounds\06Sword-Spawn.wav" />
+    <Content Include="Sounds\07Grenade-Spawn.wav" />
+    <Content Include="Sounds\08Grenade-Warning.wav" />
+    <Content Include="Sounds\09Sniper-Warning.wav" />
+    <Content Include="Sounds\10Sniper-Spawn.wav" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

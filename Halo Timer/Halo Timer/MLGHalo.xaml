@@ -14,7 +14,10 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="AppBackground.png" />
+        </Grid.Background>
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Margin="12,17,0,751"></StackPanel>
         <TextBox Height="72" HorizontalAlignment="Left" Margin="12,148,0,0" Name="mlgRocketTime" Text="" VerticalAlignment="Top" Width="149"  IsEnabled="false" />

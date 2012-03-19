@@ -150,8 +150,15 @@ namespace Halo_Timer
         {
             customPowerupTimer--;
             updateField(CustomTimer, customPowerupTimer);
+            if (customPowerupTimer == 20)
+            {
+                soundPlayer.playCustomWarning();
+            }
             if (customPowerupTimer <= 0)
+            {
+                soundPlayer.playCustomSpawn();
                 customPowerup.Stop();
+            }
         }
 
         // Method to update the field to display the timer

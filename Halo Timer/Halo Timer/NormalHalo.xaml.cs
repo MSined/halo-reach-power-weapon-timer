@@ -51,6 +51,9 @@ namespace Halo_Timer
         bool gLauncherEnabled   = false;
         bool swordEnabled       = false;
 
+        // Sound Object
+        PlaySoundFiles soundPlayer = new PlaySoundFiles();
+
         string newTime;
         
         // Map ID
@@ -118,8 +121,13 @@ namespace Halo_Timer
         {
             sniperDuration--;
             updateField(sniperTime, sniperDuration);
+            if (sniperDuration == 20)
+                soundPlayer.playSniperWarning();
             if (sniperDuration <= 0)
+            {
+                soundPlayer.playSniperSpawn();
                 sniper.Stop();
+            }
         }
 
         // Resets the rocket timer
@@ -146,8 +154,13 @@ namespace Halo_Timer
         {
             rocketDuration--;
             updateField(rocketTime, rocketDuration);
+            if (rocketDuration == 20)
+                soundPlayer.playRocketWarning();
             if (rocketDuration <= 0)
+            {
+                soundPlayer.playRocketSpawn();
                 rockets.Stop();
+            }
         }
 
         // Resets grenade launcher timer
@@ -174,18 +187,22 @@ namespace Halo_Timer
         {
             gLauncherDuration--;
             updateField(grenadeGunTimer, gLauncherDuration);
+            if (gLauncherDuration == 20)
+                soundPlayer.playGrenadeWarning();
             if (gLauncherDuration <= 0)
+            {
+                soundPlayer.playGrenadeSpawn();
                 gLauncher.Stop();
+            }
         }
 
         // Resets sword timer
-        private void swordReset_Click(object sender, RoutedEventArgs e)
+        private void swordReset_Click_1(object sender, RoutedEventArgs e)
         {
             setSwordTimer();
 
             if (swordDuration != 0)
             {
-                swordTimer.Background = new SolidColorBrush(Colors.White);
                 // If statement is to prevent the tick time from increase on each reset.
                 if (!swordEnabled)
                 {
@@ -202,17 +219,14 @@ namespace Halo_Timer
         void sword_Tick(object sender, EventArgs e)
         {
             swordDuration--;
-            if (swordDuration <= 46 && swordDuration >= 44)
-            {
-                swordTimer.Background = new SolidColorBrush(Colors.Yellow);
-            }
-            if (swordDuration == 20)
-            {
-                swordTimer.Background = new SolidColorBrush(Colors.Red);
-            }
             updateField(swordTimer, swordDuration);
+            if (swordDuration == 20)
+                soundPlayer.playSwordWarning();
             if (swordDuration <= 0)
+            {
+                soundPlayer.playSwordSpawn();
                 sword.Stop();
+            }
         }
 
 
@@ -236,10 +250,6 @@ namespace Halo_Timer
             return newTime;
         }
 
-        
-
-       
-        
         
     }
 }

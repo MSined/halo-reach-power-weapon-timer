@@ -162,7 +162,7 @@ namespace Halo_Timer
         }
 
         // Method to update the field to display the timer
-        void updateField(TextBox box, int time)
+        void updateField(TextBlock box, int time)
         {
             box.Text = convertTime(time);
         }

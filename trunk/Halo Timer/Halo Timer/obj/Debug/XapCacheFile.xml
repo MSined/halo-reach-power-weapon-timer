@@ -1,23 +1,23 @@
-﻿<xapCache source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo_Timer.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="19/03/2012 4:30:38 PM">
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/03/2012 4:29:05 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Background.png" archivePath="Background.png" lastWriteTime="02/03/2012 4:29:05 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="02/03/2012 4:29:05 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll" archivePath="Halo Timer.dll" lastWriteTime="19/03/2012 4:30:37 PM" />
-  <file source="F:\Program Files\Microsoft SDKs\Windows Phone\v7.0\Toolkit\Nov10\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="02/11/2010 4:36:16 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\01All-Warning.wav" archivePath="Sounds\01All-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\01Sniper-Grenade-Spawn.wav" archivePath="Sounds\01Sniper-Grenade-Spawn.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\02All-Spawn.wav" archivePath="Sounds\02All-Spawn.wav" lastWriteTime="17/03/2012 11:16:04 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\02Rocket-Spawn.wav" archivePath="Sounds\02Rocket-Spawn.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\03Custom-Powerup-Warning.wav" archivePath="Sounds\03Custom-Powerup-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\03Sniper-Grenade-Warning.wav" archivePath="Sounds\03Sniper-Grenade-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\04Custom-Powerup-Spawn.wav" archivePath="Sounds\04Custom-Powerup-Spawn.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\04Rocket-Warning.wav" archivePath="Sounds\04Rocket-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\05Sword-Warning.wav" archivePath="Sounds\05Sword-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\06Sword-Spawn.wav" archivePath="Sounds\06Sword-Spawn.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\07Grenade-Spawn.wav" archivePath="Sounds\07Grenade-Spawn.wav" lastWriteTime="17/03/2012 11:16:04 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\08Grenade-Warning.wav" archivePath="Sounds\08Grenade-Warning.wav" lastWriteTime="17/03/2012 11:16:04 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\09Sniper-Warning.wav" archivePath="Sounds\09Sniper-Warning.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\10Sniper-Spawn.wav" archivePath="Sounds\10Sniper-Spawn.wav" lastWriteTime="17/03/2012 11:16:03 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="02/03/2012 4:29:05 PM" />
-  <file source="F:\Users\Dave\Documents\Projects\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="04/03/2012 3:32:52 PM" />
+﻿<xapCache source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Halo_Timer.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="3/23/2012 5:01:09 PM">
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="3/23/2012 2:26:41 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\obj\Debug\Halo Timer.dll" archivePath="Halo Timer.dll" lastWriteTime="3/23/2012 5:01:08 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="3/23/2012 2:26:44 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="3/23/2012 2:26:44 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Background.png" archivePath="Background.png" lastWriteTime="3/23/2012 2:26:44 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\01All-Warning.wav" archivePath="Sounds\01All-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\01Sniper-Grenade-Spawn.wav" archivePath="Sounds\01Sniper-Grenade-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\02All-Spawn.wav" archivePath="Sounds\02All-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\02Rocket-Spawn.wav" archivePath="Sounds\02Rocket-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\03Custom-Powerup-Warning.wav" archivePath="Sounds\03Custom-Powerup-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\03Sniper-Grenade-Warning.wav" archivePath="Sounds\03Sniper-Grenade-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\04Custom-Powerup-Spawn.wav" archivePath="Sounds\04Custom-Powerup-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\04Rocket-Warning.wav" archivePath="Sounds\04Rocket-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\05Sword-Warning.wav" archivePath="Sounds\05Sword-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\06Sword-Spawn.wav" archivePath="Sounds\06Sword-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\07Grenade-Spawn.wav" archivePath="Sounds\07Grenade-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\08Grenade-Warning.wav" archivePath="Sounds\08Grenade-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\09Sniper-Warning.wav" archivePath="Sounds\09Sniper-Warning.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Sounds\10Sniper-Spawn.wav" archivePath="Sounds\10Sniper-Spawn.wav" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="3/23/2012 2:26:45 PM" />
+  <file source="C:\Users\Dave\Desktop\halo-reach-power-weapon-timer\Halo Timer\Halo Timer\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/23/2012 2:26:44 PM" />
 </xapCache>

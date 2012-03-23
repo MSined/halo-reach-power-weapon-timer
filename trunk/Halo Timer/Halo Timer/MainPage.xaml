@@ -25,14 +25,14 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Halo Reach Power Weapon Timer" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="Choose mode" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Foreground="white" x:Name="ApplicationTitle" Text="Halo Reach Power Weapon Timer" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Foreground="white" x:Name="PageTitle" Text="Choose mode" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="Team Slayer" Height="72" HorizontalAlignment="Left" Margin="130,133,0,0" Name="button1" VerticalAlignment="Top" Width="200" Click="button1_Click" />
-            <Button Content="MLG" Height="72" HorizontalAlignment="Left" Margin="130,355,0,0" Name="button2" VerticalAlignment="Top" Width="200" Click="button2_Click" />
+            <Button BorderBrush="white" Foreground="white" Content="Team Slayer" Height="72" HorizontalAlignment="Left" Margin="130,133,0,0" Name="button1" VerticalAlignment="Top" Width="200" Click="button1_Click" />
+            <Button BorderBrush="white" Foreground="white" Content="MLG" Height="72" HorizontalAlignment="Left" Margin="130,355,0,0" Name="button2" VerticalAlignment="Top" Width="200" Click="button2_Click" />
         </Grid>
     </Grid>
  
